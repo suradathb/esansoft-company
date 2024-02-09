@@ -5,6 +5,7 @@ import Page from './components/fontend/Page'
 import Blog from './components/fontend/Blog'
 import Header from './components/html5/Header'
 import Footer from './components/html5/Footer'
+import Login from './components/Auth/Login'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 
 
@@ -23,6 +24,7 @@ class App extends React.Component {
           <Route path="/About" element={<About/>} />
           <Route path="/Page" element={<Page />} />
           <Route path="/Blog" element={<Blog />} />
+          <Route path="/login" element={<Login />} />
         </Routes>
         <Footer />
       </>

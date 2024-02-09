@@ -1,6 +1,5 @@
 import React from 'react'
-import { Link } from "react-router-dom";
-
+import { Link } from 'react-router-dom'
 
 class Header extends React.Component {
   render() {
@@ -15,10 +14,7 @@ class Header extends React.Component {
                   {/* <!-- Start Navbar --> */}
                   <nav className="navbar navbar-expand-lg">
                     <Link className="navbar-brand" to="/">
-                      <img
-                        src="./assets/images/logo/logo.svg"
-                        alt="Logo"
-                      />
+                      <img src="./assets/images/logo/logo.svg" alt="Logo" />
                     </Link>
                     <button
                       className="navbar-toggler mobile-menu-btn"
@@ -48,10 +44,7 @@ class Header extends React.Component {
                           </Link>
                         </li>
                         <li className="nav-item">
-                          <Link
-                            to="/About"
-                            aria-label="Toggle navigation"
-                          >
+                          <Link to="/About" aria-label="Toggle navigation">
                             Project
                           </Link>
                         </li>
@@ -78,7 +71,9 @@ class Header extends React.Component {
                               <Link to="signup.html">Sign Up</Link>
                             </li>
                             <li className="nav-item">
-                              <Link to="reset-password.html">Reset Password</Link>
+                              <Link to="reset-password.html">
+                                Reset Password
+                              </Link>
                             </li>
                             <li className="nav-item">
                               <Link to="mail-success.html">Mail Success</Link>
@@ -110,7 +105,10 @@ class Header extends React.Component {
                           </ul>
                         </li>
                         <li className="nav-item">
-                          <Link to="contact.html" aria-label="Toggle navigation">
+                          <Link
+                            to="contact.html"
+                            aria-label="Toggle navigation"
+                          >
                             Contact
                           </Link>
                         </li>
@@ -118,7 +116,7 @@ class Header extends React.Component {
                     </div>
                     {/* <!-- navbar collapse --> */}
                     <div className="button">
-                      <Link to="signup.html" className="btn">
+                      <Link to="/login" className="btn">
                         Get started
                       </Link>
                     </div>
